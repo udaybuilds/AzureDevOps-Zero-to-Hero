@@ -9,14 +9,17 @@
 - Login to VSCode or any other IDE of your choice
 - Run the below commands to download the application code
   ```
-  mkdir day4_youtube_clone; cd day4_youtube_clone
+  mkdir Youtube_Clone; cd Youtube_Clone
   git init
-  git clone https://github.com/piyushsachdeva/Youtube_Clone
+  git clone https://github.com/udaybuilds/project_youtube_clone.git
   ```
-- Create a project in Azure DevOps for Day4 and push the code by running the below commands on VSCode:
+- Create a project in Azure DevOps for Day4 and push the code by running the below commands on VSCode (The Below code can also be found in Azure Devops
+- when you click repo section) . Since currently the remote origin is setup to be git remote repo hence we have to remove it and set Azure repo as the remote
+- origin
   ```
-  git remote add origin $YOURAZUREREPO
-  git push -u origin all
+  git remote remove origin
+  git remote add origin https://udaysrivastava0@dev.azure.com/udaysrivastava0/Youtube%20Clone/_git/Youtube%20Clone
+  git push -u origin --all
   ```
   Note: Make sure to update your Azure repo in the above command
 
